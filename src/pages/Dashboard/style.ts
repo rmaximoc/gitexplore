@@ -36,6 +36,11 @@ export const Form = styled.form<FormProps>`
     &::placeholder {
       color: #a8a8b3;
     }
+
+    @media screen and (max-width: 992px) {
+      min-height: 70px;
+      margin-bottom: 20px;
+    }
   }
 
   button {
@@ -51,6 +56,14 @@ export const Form = styled.form<FormProps>`
     &:hover {
       background: ${shade(0.2, '#84dcc6')};
     }
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
   }
 `;
 
