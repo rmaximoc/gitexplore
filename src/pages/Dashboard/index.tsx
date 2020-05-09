@@ -53,7 +53,7 @@ const Dashboard: React.FC = () => {
       setNewRepo('');
       setInputError('');
     } catch (err) {
-      setInputError('Erro na busca do repositório');
+      setInputError('Error in repo search');
     }
   }
 
